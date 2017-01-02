@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--指定背景：它的id需要使用系统的@android:id/background，背景选择一张图片。也可以选择自定义drawable结合shape-->
+    <item android:id="@android:id/background" android:drawable="@drawable/security_progress_bg"/>
+    <!--指定进度的样子-->
+    <item android:id="@android:id/progress" android:drawable="@drawable/security_progress"/>
+
+</layer-list>

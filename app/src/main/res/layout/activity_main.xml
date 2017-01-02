@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--标题-->
+    <TextView
+        android:background="@color/colorAccent"
+        android:text="扫描动画"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--容器-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--放置动画,设置一个背景-->
+        <FrameLayout
+            android:background="@drawable/ic_scanner_malware"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!--设置图片，代表要添加动画的旋转指针-->
+            <ImageView
+                android:id="@+id/iv_main_scan"
+                android:src="@drawable/act_scanning_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </FrameLayout>
+
+        <!--提示与进度条-->
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_main_scan"
+                android:textSize="18sp"
+                android:text="正在扫描中，请稍后"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ProgressBar
+                android:id="@+id/pb_main_scan"
+                android:layout_marginTop="5dp"
+                style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+                android:progressDrawable="@drawable/my_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
